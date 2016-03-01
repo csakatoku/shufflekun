@@ -6,7 +6,7 @@ shuffle = require('shuffle-array')
 
 module.exports = (robot) ->
 
-  robot.hear /(.*)/i, (res) ->
+  robot.respond /(.*)/i, (res) ->
     lines = res.match.input.split("\n")
 
     pots = []
